@@ -1,22 +1,19 @@
 @font-face {
  font-family: 'arbutsman';
- src: url('../assets/arbutsman.otf')format('opentype'),url('https://sinidonk.github.io/Fontku/arbutsman.otf') 
+ src: url('https://sinidonk.github.io/Fontku/arbutsman.otf') 
   format('opentype');
 }
 
 
 @font-face {
  font-family:'arbquran';
- src: url('../assets/arbquran.otf')
-  format('opentype'),
-  url('https://sinidonk.github.io/Fontku/arbquran.otf') 
+ src:url('https://sinidonk.github.io/Fontku/arbquran.otf') 
   format('opentype');
 }
 
 @font-face {
  font-family: 'arbmisbah';
- src: url('../assets/arbmisbah.ttf')
-  format('truetype'), url('https://sinidonk.github.io/Fontku/arbmisbah.ttf') format('truetype');
+ src:url('https://sinidonk.github.io/Fontku/arbmisbah.ttf') format('truetype');
 }
 
 .judul{
@@ -41,7 +38,7 @@ font-family: 'arbutsman';
   letter-spacing:normal;
 word-spacing:1px;
  direction: rtl;
- text-align: center !important; }
+ text-align: justify !important; }
 
 /* Paksa untuk memastikan teks diratakan */
   
@@ -69,7 +66,7 @@ font-size: 14px;
 }
 
 .judul, .arab, .latin, .azam, .arti{
-padding:5px;text-align:center;
+padding:5px;text-align:justify;
 }
 
 .arki, .laki, .azki, .artki{
