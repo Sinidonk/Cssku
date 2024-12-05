@@ -1,28 +1,27 @@
-html, body {
- height: 100%;
- margin: 0;
+body {
+ height: 100vh;
+ margin: 0px;
  padding:5px;
  background-color: green;
  box-sizing: border-box;
  overflow: hidden;
- border-radius:10px;
 }
 
  /* Kepala */
  .Kepala, .Kaki {
- background-color: brown;
- border:3px double black;
+ background-color: green;
+ border:5px double white;
    filter: opacity(1);
- padding5: 5px;
+ padding: 5px;
  position: fixed;
- width: 98%;
+ width: 95%;
  left:50%;
      transform: translateX(-50%);
  z-index: 500;
  display: flex;
  align-items: center;
  height: 30px;
-   
+   justify-content: center;
     transition: transform 0.3s ease;
 }
  
@@ -64,11 +63,14 @@ html, body {
  left: -200px;
  width: 200px;
  margin-left:0px;
+   margin-bottom:10px;
  height:100%;
  background-color: green;
  border-right:2px solid black;
  transition: 0.1s;
- padding:45px 0px;  
+ padding-top:45px;
+   padding-bottom:70px;
+   overflow-y: auto;
  }
   
 /* Kotak Isi Menu SubMenu1 */
@@ -141,13 +143,12 @@ background-color:white;
 border: 5px double blue;
 box-sizing: border-box;
 border-radius: 10px;
- margin:0px;
- padding:0px;
+ margin:0;
+ padding:0;
  /*Atas Kanan Kiri Bawah*/
  overflow:auto;
  width:100%;
  height:100%;
-   
    color:black;
    
  }
@@ -185,14 +186,14 @@ border-radius: 10px;
 
 
 .Mas1 {
- background-image:url('../assets/M7A.png');
+ background-image:url('../Gbr/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
   background-size:cover;
   left: 5px;
   
 }
 
 .Mas2 {
- background-image:url('../assets/M7B.png');
+ background-image:url('../Gbr/M1B.png'),url('https://sinidonk.github.io/Gbrku/M1B.png');
   background-size:cover;
   right: 5px;
   
@@ -208,7 +209,7 @@ border-radius: 10px;
   transform: translateX(-50%);
   height:20px;
   width:200px;
-  bottom:2px;
+  bottom:5px;
    z-index: 1000;
 }
 
@@ -222,28 +223,31 @@ border-radius: 10px;
   transform: translateX(-5%);
 }
 
-.GHeader{
- background-image:url('../assets/GHeader.png');
+.Header{
+ background-image:url('../Gbr/Header.png'),url('https://sinidonk.github.io/Gbrku/Header.png');
   background-size:cover;
+  background-repeat:no-repeat;
   left:0;
-  top: 5px;
+  top: 0;
   width:200px;
- height:30px;
+ height:25px;
 }
 
 .icomode {
- background-image:url('../assets/icomode.png');
+ background-image:url('../Gbr/Mode.png'),url('https://sinidonk.github.io/Gbrku/Mode.png')
+  
+  ;
   background-size:cover;
-  top: 5px;
+  top:0;
   width:30px;
  height:30px;
 }
 
 .susun{
-  background-image:url('../assets/icoB.png');
+  background-image:url('../Gbr/icoB.png'),url('https://sinidonk.github.io/Gbrku/icoB.png');
   background-size:cover;
-  background-repeat: no-
- top: 5px;
+  background-repeat: no-repeat;
+ top:0;
   width:30px;
  height:30px;
   repeat;
@@ -252,3 +256,4 @@ border-radius: 10px;
     outline: none;
 
 }
+
