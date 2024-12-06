@@ -45,27 +45,27 @@ background-size:cover;
   
  .MenuUtama{
   width:25px;
- background-image:url('../Gbr/TMenu4.png'),url('https://sinidonk.github.io/Gbrku/TMenu4.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/TMenu4.png');
   left: 5px;
   }
   
 .Logo{
   width:200px;
-  background-image:url('../Gbr/Header.png'),url('https://sinidonk.github.io/Gbrku/Header.png');
+  background-image:url('https://sinidonk.github.io/Gbrku/Header.png');
 left:50%;
 transform: translate(-50%);
  }
 
 .Mode{
  width:25px;
- background-image:url('../Gbr/Mode.png'),url('https://sinidonk.github.io/Gbrku/Mode.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/Mode.png');
 left: 80%;
 transform: translate(-50%);
 }
   
 .Susun {
   width:25px;
- background-image:url('../Gbr/class.png'),url('https://sinidonk.github.io/Gbrku/class.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/icoB.png');
   right:5px;
 }
   
@@ -161,7 +161,7 @@ transform: translate(-50%);
 
 
 .Kecil {
- background-image:url('../Gbr/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/M1A.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -170,7 +170,7 @@ transform: translate(-50%);
 }
 
 .Besar {
- background-image:url('../Gbr/M1B.png'),url('https://sinidonk.github.io/Gbrku/M1B.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/M1B.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
