@@ -1,0 +1,195 @@
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ overflow: hidden;
+ height: 100vh;
+ background-color: green;
+ }
+
+ .Kepala, .Kaki {
+ position: fixed;
+ justify-content: center;
+ width: 98%;
+ left: 50%;
+ transform: translateX(-50%);
+ height: 30px;
+ background-color: green;
+ border: 5px double yellow;
+ display: none;
+ z-index: 1000;
+ text-align:center;
+color:white;
+line-height: 30px;
+ }
+
+ .Kepala {
+ top: 0;
+ border-radius: 5px 5px 10px 10px;
+ }
+
+ .Kaki {
+ bottom: 0;
+ border-radius: 10px 10px 5px 5px;
+ }
+  
+  .MenuUtama, .Logo, .Mode, .Susun{
+ position:absolute;
+ z-index: 1000;
+ top:3px;
+background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+ height: 25px;
+ }
+  
+  
+ .MenuUtama{
+  width:25px;
+ background-image:url('../Gbr/TMenu4.png'),url('https://sinidonk.github.io/Gbrku/TMenu4.png');
+  left: 5px;
+  }
+  
+.Logo{
+  width:200px;
+  background-image:url('../Gbr/Header.png'),url('https://sinidonk.github.io/Gbrku/Header.png');
+left:50%;
+transform: translate(-50%);
+ }
+
+.Mode{
+ width:25px;
+ background-image:url('../Gbr/Mode.png'),url('https://sinidonk.github.io/Gbrku/Mode.png');
+left: 80%;
+transform: translate(-50%);
+}
+  
+.Susun {
+  width:25px;
+ background-image:url('../Gbr/Class.png'),url('https://sinidonk.github.io/Gbrku/Class.png');
+  right:5px;
+}
+  
+  
+ .menu {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ padding-top: 40px;
+ left: -200px;
+ width: 200px;
+ height: 100vh;
+ background-color: green;
+ border-right: 1px solid black;
+ transition: left 0.3s ease;
+ overflow-y: auto;
+ z-index: 999;
+ color: white;
+ }
+
+ .menu.open {
+ left: 0;
+ }
+
+ .menu ul {
+ list-style: none;
+ padding: 5px;
+ margin: 3px;
+ border: 1px solid yellow;
+ border-radius: 5px 15px 15px 5px;
+ gap: 3px;
+ }
+
+ .menu li {
+ padding: 10px;
+ border: 1px solid white;
+ cursor: pointer;
+ border-radius: 5px 15px 15px 5px;
+ }
+
+ .menu li:hover {
+ background-color: blue;
+ color: yellow;
+ font-weight: bold;
+ }
+
+ .submenu {
+ display: none;
+ padding-left: 5px;
+ }
+
+ .submenu li {
+ border: 1px solid white;
+ border-radius: 5px 15px 15px 5px;
+ }
+
+ .submenu li:hover {
+ background-color: green;
+ color: yellow;
+ font-weight: bold;
+ }
+
+ .submenu.open {
+ display: block;
+ }
+
+ .Badan {
+ position: fixed;
+ margin: 0;
+ top: 0px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 98%;
+ height: 98vh;
+ border: 5px double blue;
+ border-radius: 15px;
+ z-index: 500;
+ transition: margin-left 0.3s ease;
+ background-color: white;
+ }
+
+ .Badan.menu-open {
+ margin-left: 200px;
+ }
+  
+  .Kecil, .Besar{
+ position:fixed;
+ z-index: 1001;
+  bottom: 0px;
+  width:70px;
+ height:70px;
+ }
+
+
+.Kecil {
+ background-image:url('../Gbr/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  left: 5px;
+  
+}
+
+.Besar {
+ background-image:url('../Gbr/M1B.png'),url('https://sinidonk.github.io/Gbrku/M1B.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  right: 5px;
+}
+  
+.Info{
+  position:absolute;
+  justify-content:center;
+  background-color:white;
+  border:3px double blue;
+  color:blue;
+ border-radius:15px;
+  left: 50%;
+  top: 50%;
+transform: translate(-50%, -50%);
+  height:20px;
+  width:200px;
+   z-index: 1000;
+
+ }
+
