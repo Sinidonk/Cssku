@@ -52,7 +52,7 @@ background-size:cover;
   
 .Logo{
   width:200px;
-  background-image:url('https://sinidonk.github.io/Gbrku/Header.png');
+  background-image:url('../Gbr/Header.png');
 left:50%;
 transform: translate(-50%);
  }
@@ -66,7 +66,7 @@ transform: translate(-50%);
   
 .Susun {
   width:25px;
- background-image:url(''https://sinidonk.github.io/Gbrku/icoB.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/icoB.png');
   right:5px;
 }
   
