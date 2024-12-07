@@ -52,7 +52,7 @@ background-size:cover;
   
 .Logo{
   width:200px;
-  background-image:url('../Gbr/Header.png');
+  background-image:url('https://sinidonk.github.io/Gbrku/Header.png');
 left:50%;
 transform: translate(-50%);
  }
