@@ -4,17 +4,18 @@ body {
  overflow: hidden;
  height: 100vh;
  background-color: green;
+  padding:5px;
  }
 
  .Kepala, .Kaki {
  position: fixed;
  justify-content: center;
- width: 98%;
+ width: 97%;
  left: 50%;
  transform: translateX(-50%);
  height: 30px;
  background-color: green;
- border: 5px double yellow;
+ border: 5px double lightblue;
  display: none;
  z-index: 1000;
  text-align:center;
@@ -65,7 +66,7 @@ transform: translate(-50%);
   
 .Susun {
   width:25px;
- background-image:url('https://sinidonk.github.io/Gbrku/icoB.png');
+ background-image:url(''https://sinidonk.github.io/Gbrku/icoB.png');
   right:5px;
 }
   
@@ -75,71 +76,104 @@ transform: translate(-50%);
  top: 0;
  bottom: 0;
  padding-top: 40px;
- left: -200px;
+   padding-left:5px;
+   padding-right:5px;
+ left: -215px;
  width: 200px;
  height: 100vh;
  background-color: green;
- border-right: 1px solid black;
+ border-right: 3px double white;
  transition: left 0.3s ease;
  overflow-y: auto;
  z-index: 999;
- color: white;
+   font-size:15px;
  }
 
  .menu.open {
  left: 0;
  }
 
- .menu ul {
+ ul {
  list-style: none;
- padding: 5px;
- margin: 3px;
- border: 1px solid yellow;
- border-radius: 5px 15px 15px 5px;
- gap: 3px;
+ padding:0px;
+ margin:0px;
+ display: flex;
+    flex-direction: column;
+    gap: 5px; /* Jarak antar menu */
  }
 
  .menu li {
- padding: 10px;
- border: 1px solid white;
- cursor: pointer;
- border-radius: 5px 15px 15px 5px;
- }
+    position: relative;
+    padding: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px 15px 15px 5px;
+   background-color:purple;
+   color:white;
+}
 
- .menu li:hover {
+.menu li:hover {
  background-color: blue;
  color: yellow;
  font-weight: bold;
  }
 
- .submenu {
- display: none;
- padding-left: 5px;
- }
+.menu li.has-submenu::after {
+    content: '▶'; /* Segitiga ke kanan */
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    color: white; /* Warna default */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animasi warna */
+}
 
- .submenu li {
+.menu li.has-submenu.open::after {
+    transform: translateY(-50%) rotate(90deg); /* Ubah arah ke bawah */
+}
+
+.menu li.has-submenu:hover::after {
+    color: yellow; /* Ubah warna saat hover */
+}
+
+/* Tambahkan padding untuk submenu agar tidak menempel */
+.submenu {
+    display: none;
+    padding-left: 5px; /* Beri indentasi submenu */
+}
+
+.submenu li {
  border: 1px solid white;
  border-radius: 5px 15px 15px 5px;
+  background-color:black;
+   color:yellow;
  }
 
- .submenu li:hover {
- background-color: green;
- color: yellow;
+.submenu li:hover {
+ background-color: red;
+ color: white;
  font-weight: bold;
  }
 
+.submenu.open {
+    display: block;
+}
+
  .submenu.open {
- display: block;
+   display: flex;
+    flex-direction: column;
+    gap: 5px; /* Jarak antar menu */
  }
+ 
 
  .Badan {
  position: fixed;
- margin: 0;
- top: 0px;
+ top: 5px;
  left: 50%;
  transform: translateX(-50%);
- width: 98%;
- height: 98vh;
+ width: 95%;
+ height: 96%;
  border: 5px double blue;
  border-radius: 15px;
  z-index: 500;
@@ -181,7 +215,7 @@ transform: translate(-50%);
   position:absolute;
   justify-content:center;
   background-color:white;
-  border:3px double blue;
+  border:1px double blue;
   color:blue;
  border-radius:15px;
   left: 50%;
@@ -190,6 +224,7 @@ transform: translate(-50%, -50%);
   height:20px;
   width:200px;
    z-index: 1000;
-
+  padding:3px;
+  overflow-Y:hidden;
  }
 
