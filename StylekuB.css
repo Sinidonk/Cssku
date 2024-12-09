@@ -71,7 +71,7 @@ transform: translate(-50%);
 }
   
   
- .menu {
+ .Menu {
  position: fixed;
  top: 0;
  bottom: 0;
@@ -89,7 +89,7 @@ transform: translate(-50%);
    font-size:15px;
  }
 
- .menu.open {
+ .Menu.open {
  left: 0;
  }
 
@@ -99,10 +99,10 @@ transform: translate(-50%);
  margin:0px;
  display: flex;
     flex-direction: column;
-    gap: 5px; /* Jarak antar menu */
+    gap: 5px; /* Jarak antar Menu */
  }
 
- .menu li {
+ .Menu li {
     position: relative;
     padding: 5px;
     border: 1px solid white;
@@ -112,13 +112,13 @@ transform: translate(-50%);
    color:white;
 }
 
-.menu li:hover {
+.Menu li:hover {
  background-color: blue;
  color: yellow;
  font-weight: bold;
  }
 
-.menu li.has-submenu::after {
+.Menu li.has-SubMenu::after {
     content: '▶'; /* Segitiga ke kanan */
     font-size: 18px;
     position: absolute;
@@ -129,41 +129,37 @@ transform: translate(-50%);
     transition: transform 0.3s ease, color 0.3s ease; /* Animasi warna */
 }
 
-.menu li.has-submenu.open::after {
+.Menu li.has-SubMenu.open::after {
     transform: translateY(-50%) rotate(90deg); /* Ubah arah ke bawah */
 }
 
-.menu li.has-submenu:hover::after {
+.Menu li.has-SubMenu:hover::after {
     color: yellow; /* Ubah warna saat hover */
 }
 
-/* Tambahkan padding untuk submenu agar tidak menempel */
-.submenu {
+/* Tambahkan padding untuk SubMenu agar tidak menempel */
+.SubMenu {
     display: none;
-    padding-left: 5px; /* Beri indentasi submenu */
+    padding-left: 5px; /* Beri indentasi SubMenu */
 }
 
-.submenu li {
+.SubMenu li {
  border: 1px solid white;
  border-radius: 5px 15px 15px 5px;
   background-color:black;
    color:yellow;
  }
 
-.submenu li:hover {
+.SubMenu li:hover {
  background-color: red;
  color: white;
  font-weight: bold;
  }
 
-.submenu.open {
-    display: block;
-}
-
- .submenu.open {
+ .SubMenu.open {
    display: flex;
     flex-direction: column;
-    gap: 5px; /* Jarak antar menu */
+    gap: 5px; /* Jarak antar Menu */
  }
  
 
@@ -181,7 +177,7 @@ transform: translate(-50%);
  background-color: white;
  }
 
- .Badan.menu-open {
+ .Badan.Menu-open {
  margin-left: 200px;
  }
   
@@ -195,7 +191,7 @@ transform: translate(-50%);
 
 
 .Kecil {
- background-image:url('https://sinidonk.github.io/Gbrku/M1A.png');
+ background-image:url('https://sinidonk.github.io/Gbrku/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
