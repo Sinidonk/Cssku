@@ -1,0 +1,239 @@
+
+  body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ overflow: hidden;
+ height: 100vh;
+ background-color: green;
+  padding:5px;
+ }
+
+ .Kepala, .Kaki {
+ position: fixed;
+ justify-content: center;
+ width: 97%;
+ left: 50%;
+ transform: translateX(-50%);
+ height: 30px;
+ background-color: green;
+ border: 5px double lightblue;
+ display: none;
+ z-index: 1000;
+ text-align:center;
+color:white;
+line-height: 30px;
+ }
+
+ .Kepala {
+ top: 0;
+ border-radius: 5px 5px 10px 10px;
+ }
+
+ .Kaki {
+ bottom: 0;
+ border-radius: 10px 10px 5px 5px;
+ }
+  
+  .MenuUtama, .Logo, .Mode, .Susun{
+ position:absolute;
+ z-index: 1000;
+ top:3px;
+background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+ height: 25px;
+ }
+  
+  
+ .MenuUtama{
+  width:25px;
+ background-image:url('https://sinidonk.github.io/Gbrku/TMenu4.png');
+  left: 5px;
+  }
+  
+.Logo{
+  width:200px;
+  background-image:url('https://sinidonk.github.io/Gbrku/Header.png');
+left:50%;
+transform: translate(-50%);
+ }
+
+.Mode{
+ width:25px;
+ background-image:url('https://sinidonk.github.io/Gbrku/Mode.png');
+left: 80%;
+transform: translate(-50%);
+}
+  
+.Susun {
+  width:25px;
+ background-image:url('https://sinidonk.github.io/Gbrku/Class.png');
+  right:5px;
+}
+  
+  
+ .Menu {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ padding-top: 40px;
+   padding-left:5px;
+   padding-right:5px;
+ left: -215px;
+ width: 200px;
+ height: 100vh;
+ background-color: green;
+ border-right: 3px double white;
+ transition: left 0.3s ease;
+ overflow-y: auto;
+ z-index: 999;
+   font-size:15px;
+ }
+
+ .Menu.open {
+ left: 0;
+ }
+
+ ul {
+ list-style: none;
+ padding:0px;
+ margin:0px;
+ display: flex;
+    flex-direction: column;
+    gap: 5px; /* Jarak antar Menu */
+ }
+
+ .Menuli {
+    position: relative;
+    padding: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px 15px 15px 5px;
+   background-color:purple;
+   color:white;
+}
+
+.Menuli:hover {
+ background-color: blue;
+ color: yellow;
+ font-weight: bold;
+ }
+
+.Menuli.Hsm::after {
+    content: '▶'; 
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    color: white; /* Warna default */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animasi warna */
+}
+
+.Menuli.Hsm.open::after {
+    transform: translateY(-50%) rotate(90deg); /* Ubah arah ke bawah */
+}
+
+.Menuli.Hsm:hover::after {
+    color: yellow; /* Ubah warna saat hover */
+}
+
+
+/* SubMenu terlihat ketika elemen parent memiliki kelas "open" */
+.Menuli.Hsm.open + .SubMenu {
+    display: flex;
+
+}
+
+
+
+
+/* Tambahkan padding untuk SubMenu agar tidak menempel */
+.SubMenu {
+    display:none;
+    padding-left: 5px; flex-direction: column;
+    gap: 5px; 
+}
+
+
+.SubMenu li {
+  padding:5px;
+ border: 1px solid white;
+ border-radius: 5px 15px 15px 5px;
+  background-color:black;
+   color:yellow;
+ }
+
+.SubMenu li:hover {
+ background-color: red;
+ color: white;
+ font-weight: bold;
+    
+ }
+
+ .SubMenu.open {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+ .Badan {
+ position: fixed;
+ top: 5px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 95%;
+ height: 96%;
+ border: 5px double blue;
+ border-radius: 15px;
+ z-index: 500;
+ transition: margin-left 0.3s ease;
+ background-color: white;
+ }
+
+ .Badan.Menu-open {
+ margin-left: 200px;
+ }
+  
+  .Kecil, .Besar{
+ position:fixed;
+ z-index: 1001;
+  bottom: 0px;
+  width:70px;
+ height:70px;
+ }
+
+
+.Kecil {
+ background-image:url('https://sinidonk.github.io/Gbrku/M1A.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  left: 5px;
+  
+}
+
+.Besar {
+ background-image:url('https://sinidonk.github.io/Gbrku/M1B.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  right: 5px;
+}
+  
+.Info{
+  position:absolute;
+  justify-content:center;
+  background-color:white;
+  border:1px double blue;
+  color:blue;
+ border-radius:15px;
+  left: 50%;
+  top: 50%;
+transform: translate(-50%, -50%);
+  height:20px;
+  width:200px;
+   z-index: 1000;
+  padding:3px;
+  overflow-Y:hidden;
+ }
