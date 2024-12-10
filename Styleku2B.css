@@ -1,8 +1,7 @@
-
-  body {
+body {
  margin: 0;
  font-family: Arial, sans-serif;
- overflow: hidden;
+ overflow: auto;
  height: 100vh;
  background-color: green;
   padding:5px;
@@ -47,32 +46,32 @@ background-size:cover;
   
  .MenuUtama{
   width:25px;
- background-image:url('https://sinidonk.github.io/Gbrku/TMenu4.png');
+ background-image:url('../Gbrku/TMenu4.png'),url('https://sinidonk.github.io/Gbrku/TMenu4.png');
   left: 5px;
   }
   
 .Logo{
   width:200px;
-  background-image:url('https://sinidonk.github.io/Gbrku/Header.png');
+  background-image:url('../Gbrku/Header.png'),url('https://sinidonk.github.io/Gbrku/Header.png');
 left:50%;
 transform: translate(-50%);
  }
 
 .Mode{
  width:25px;
- background-image:url('https://sinidonk.github.io/Gbrku/Mode.png');
+ background-image:url('../Gbrku/Mode.png'),url('https://sinidonk.github.io/Gbrku/Mode.png');
 left: 80%;
 transform: translate(-50%);
 }
   
 .Susun {
   width:25px;
- background-image:url('https://sinidonk.github.io/Gbrku/Class.png');
+ background-image:url('../Gbrku/icoB.png'),url('https://sinidonk.github.io/Gbrku/icoB.png');
   right:5px;
 }
   
   
- .Menu {
+ .DMenu {
  position: fixed;
  top: 0;
  bottom: 0;
@@ -84,24 +83,30 @@ transform: translate(-50%);
  height: 100vh;
  background-color: green;
  border-right: 3px double white;
- transition: left 0.3s ease;
+ transition: left 0.1s ease;
  overflow-y: auto;
+   overflow-x:hidden;
  z-index: 999;
    font-size:15px;
  }
 
- .Menu.open {
+ .DMenu.open {
  left: 0;
  }
 
- ul {
- list-style: none;
- padding:0px;
- margin:0px;
- display: flex;
+ .Menu {
+    list-style: none; /* Menghilangkan bullet */
+    list-style-type: none; /* Tambahan untuk lebih spesifik */
+    padding: 5px;
+    margin: 0px;
+    display: flex;
     flex-direction: column;
-    gap: 5px; /* Jarak antar Menu */
- }
+    gap: 5px; /* Jarak antar menu */
+    border: 1px solid white;
+    border-radius: 5px 15px 15px 5px;
+    background-color: blue;
+    color: white;
+}
 
  .Menuli {
     position: relative;
@@ -151,6 +156,8 @@ transform: translate(-50%);
 /* Tambahkan padding untuk SubMenu agar tidak menempel */
 .SubMenu {
     display:none;
+  list-style: none; /* Menghilangkan bullet */
+    list-style-type: none; /* Tambahan untuk lebih spesifik */
     padding-left: 5px; flex-direction: column;
     gap: 5px; 
 }
@@ -191,7 +198,7 @@ transform: translate(-50%);
  background-color: white;
  }
 
- .Badan.Menu-open {
+  .Badan.DMenu-open {
  margin-left: 200px;
  }
   
@@ -205,7 +212,7 @@ transform: translate(-50%);
 
 
 .Kecil {
- background-image:url('https://sinidonk.github.io/Gbrku/M1A.png');
+ background-image:url('../Gbrku/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -214,7 +221,7 @@ transform: translate(-50%);
 }
 
 .Besar {
- background-image:url('https://sinidonk.github.io/Gbrku/M1B.png');
+ background-image:url('../Gbrku/M1B.png'),url('https://sinidonk.github.io/Gbrku/M1B.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
