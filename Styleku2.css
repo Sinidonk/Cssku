@@ -6,7 +6,7 @@ body {
  overflow:auto;
 }
 
- .Kepala, .Kaki{
+ .Atasan, .Bawahan{
    position:fixed;
    display: flex;
       gap: 2px;
@@ -20,8 +20,8 @@ body {
       left:50%;
   transform: translateX(-50%);
     }
-.Kepala{ top: 0px;}
-.Kaki{bottom: 0px;}
+.Atasan{ top: 0px;}
+.Bawahan{bottom: 0px;}
 
 
  .Tombol{
