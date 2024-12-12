@@ -1,7 +1,7 @@
 body {
  margin: 0;
  font-family: Arial, sans-serif;
- overflow: auto;
+ overflow:auto;
  height: 100vh;
  background-color: green;
   padding:5px;
@@ -16,7 +16,7 @@ body {
  height: 30px;
  background-color: green;
  border: 5px double lightblue;
- display: none;
+ display: block;
  z-index: 1000;
  text-align:center;
 color:white;
@@ -46,33 +46,33 @@ background-size:cover;
   
  .MenuUtama{
   width:25px;
- background-image:url('../Gbrku/TMenu4.png'),url('https://sinidonk.github.io/Gbrku/TMenu4.png');
+ background-image:url('../Gbrku/TMenu4.png');
   left: 5px;
   }
   
 .Logo{
   width:200px;
-  background-image:url('../Gbrku/Header.png'),url('https://sinidonk.github.io/Gbrku/Header.png');
+  background-image:url('../Gbrku/Header.png');
 left:50%;
 transform: translate(-50%);
  }
 
 .Mode{
  width:25px;
- background-image:url('../Gbrku/Mode.png'),url('https://sinidonk.github.io/Gbrku/Mode.png');
+ background-image:url('../Gbrku/Mode.png');
 left: 80%;
 transform: translate(-50%);
 }
   
 .Susun {
   width:25px;
- background-image:url('../Gbrku/icoB.png'),url('https://sinidonk.github.io/Gbrku/icoB.png');
+ background-image:url('../Gbrku/icoB.png');
   right:5px;
 }
   
   
  .DMenu {
- position: fixed;
+ position: absolute;
  top: 0;
  bottom: 0;
  padding-top: 40px;
@@ -85,7 +85,7 @@ transform: translate(-50%);
  border-right: 3px double white;
  transition: left 0.1s ease;
  overflow-y: auto;
-   overflow-x:hidden;
+   overflow-x: hidden;
  z-index: 999;
    font-size:15px;
  }
@@ -106,7 +106,9 @@ transform: translate(-50%);
     border-radius: 5px 15px 15px 5px;
     background-color: blue;
     color: white;
-}
+ }
+
+
 
  .Menuli {
     position: relative;
@@ -191,11 +193,15 @@ transform: translate(-50%);
  transform: translateX(-50%);
  width: 95%;
  height: 96%;
+   background-color: white;
  border: 5px double blue;
  border-radius: 15px;
  z-index: 500;
  transition: margin-left 0.3s ease;
- background-color: white;
+ }
+
+ .Badan.DMenu-open {
+ margin-left: 200px;
  }
   
   .Kecil, .Besar{
@@ -208,7 +214,7 @@ transform: translate(-50%);
 
 
 .Kecil {
- background-image:url('../Gbrku/M1A.png'),url('https://sinidonk.github.io/Gbrku/M1A.png');
+ background-image:url('../Gbrku/M1A.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -217,7 +223,7 @@ transform: translate(-50%);
 }
 
 .Besar {
- background-image:url('../Gbrku/M1B.png'),url('https://sinidonk.github.io/Gbrku/M1B.png');
+ background-image:url('../Gbrku/M1B.png');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
