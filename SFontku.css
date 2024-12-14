@@ -1,68 +1,70 @@
+
 @font-face {
  font-family: 'arbutsman';
  src: url('https://sinidonk.github.io/Fontku/arbutsman.otf') 
   format('opentype');
 }
 
-
 @font-face {
  font-family:'arbquran';
- src:url('https://sinidonk.github.io/Fontku/arbquran.ttf') 
+ src: url('https://sinidonk.github.io/Fontku/arbquran.ttf') 
   format('truetype');
 }
 
 @font-face {
  font-family: 'arbmisbah';
- src:url('https://sinidonk.github.io/Fontku/arbmisbah.ttf') format('truetype');
+ src: url('https://sinidonk.github.io/Fontku/arbmisbah.ttf') format('truetype');
 }
 
 .judul{
-font-family:'georgia';
+font-family:'Georgia';
 font-size: 16px;
-font-weight:bold;
-direction: ltr;
-text-transform: capitalize;
+	font-weight:bold;
+		direction: ltr;
+		text-transform: capitalize;
 }
 
-.arab, .arte, .arki, .arka {
+.arab, .arki, .arte, .arka {
 font-family: 'arbutsman';
- font-size: 35px;
- line-height:1.3;
+ font-size: 30px;
+ line-height:1.5;
  direction: rtl;
+  
 }
 
 .surat {
 font-family: 'arbutsman';
- font-size: 35px;
- line-height:1.3;
+ font-size: 30px;
+ line-height:1.5;
   letter-spacing:normal;
 word-spacing:1px;
  direction: rtl;
- text-align: justify !important; }
+ text-align:justify;
+}
 
-/* Paksa untuk memastikan teks diratakan */
-  
 .latin, .laki, .laka{
 font-family:'georgia';
-font-size: 16px;
-direction: ltr;
-text-transform: uppercase;
-font-weight:bold;
+font-size: 14px;
+		direction: ltr;
+		text-transform: uppercase;
+		font-weight:light;
 }
 
 .azam, .azki, .azka{
 font-family:'georgia';
 font-size: 14px;
-direction: ltr;
-text-transform: capitalize;
+		direction: ltr;
+		text-transform: capitalize;
+  font-weight:light;
 }
 
 .arti, artki, .artka{
 font-family:'georgia';
 font-size: 14px;
-direction: ltr;
+		direction: ltr;
  font-style:italic;
-text-transform: capitalize;
+		text-transform: capitalize;
+  font-weight:normal;
 }
 
 .judul, .arte, .arab, .latin, .azam, .arti{
@@ -76,3 +78,23 @@ padding:5px;text-align: left;
 .arka, .laka, .azka, .artka{
 padding:5px;text-align:right;
 }
+
+button {
+  position:absolute;
+  display:inline-block;
+  white-space:nowrap;
+  border:1px solid black;
+  border-radius:5px;
+  font-weight:bold;
+  background-color:lightblue;
+  left:50%;
+     transform: translateX(-50%);
+  font-size:16px;
+  margin:5px;
+  cursor:pointer;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+
+
