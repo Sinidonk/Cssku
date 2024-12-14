@@ -19,12 +19,12 @@
 .judul{
 font-family:'georgia';
 font-size: 16px;
-	font-weight:bold;
-		direction: ltr;
-		text-transform: capitalize;
+font-weight:bold;
+direction: ltr;
+text-transform: capitalize;
 }
 
-.judul, .arab, .arte, .arki, .arka {
+.arab, .arte, .arki, .arka {
 font-family: 'arbutsman';
  font-size: 35px;
  line-height:1.3;
@@ -45,16 +45,16 @@ word-spacing:1px;
 .latin, .laki, .laka{
 font-family:'georgia';
 font-size: 16px;
-		direction: ltr;
-		text-transform: uppercase;
-		fony-weight:bold;
+direction: ltr;
+text-transform: uppercase;
+font-weight:bold;
 }
 
 .azam, .azki, .azka{
 font-family:'georgia';
 font-size: 14px;
-		direction: ltr;
-		text-transform: capitalize;
+direction: ltr;
+text-transform: capitalize;
 }
 
 .arti, artki, .artka{
@@ -63,6 +63,10 @@ font-size: 14px;
 direction: ltr;
  font-style:italic;
 text-transform: capitalize;
+}
+
+.judul, .arte, .arab, .latin, .azam, .arti{
+padding:5px;text-align:center;
 }
 
 .arki, .laki, .azki, .artki{
