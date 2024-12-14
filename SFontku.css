@@ -24,7 +24,7 @@ font-size: 16px;
 		text-transform: capitalize;
 }
 
-.arab, .arki, .arka {
+.arab, .arte, .arki, .arka {
 font-family: 'arbutsman';
  font-size: 35px;
  line-height:1.3;
@@ -65,12 +65,16 @@ font-size: 14px;
 		text-transform: capitalize;
 }
 
-.judul, .arab, .latin, .azam, .arti{
+.arab, .latin, .azam, .arti{
 padding:5px;text-align:justify;
 }
 
 .arki, .laki, .azki, .artki{
 padding:5px;text-align: left;
+}
+
+judul, .arte, .late, .azte, .artte{
+padding:5px;text-align: center;
 }
 
 .arka, .laka, .azka, .artka{
